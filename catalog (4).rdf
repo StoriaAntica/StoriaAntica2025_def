@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:locn="http://www.w3.org/ns/locn#" xmlns:hydra="http://www.w3.org/ns/hydra/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcatapit="http://dati.gov.it/onto/dcatapit#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gsp="http://www.opengis.net/ont/geosparql#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+
+<dcatapit:Catalog rdf:about="https://storiaantica.eu">
+  <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+  <dct:title>Istituto Italiano per la Storia Antica</dct:title>
+  <dct:publisher>
+    <dcatapit:Agent rdf:about="iipsa">
+      <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+      <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+      <dct:identifier>iipsa</dct:identifier>
+      <foaf:name>Istituto Italiano per la Storia Antica RTD</foaf:name>
+    </dcatapit:Agent>
+  </dct:publisher>
+  <dct:description>Portale dei dati aperti</dct:description>
+  <dct:language>it</dct:language>
+  <foaf:homepage rdf:resource="https://storiaantica.eu#"/>
+  <dcat:themeTaxonomy>
+    <skos:ConceptScheme rdf:about="http://publications.europa.eu/resource/authority/data-theme">
+      <dct:title>Data Theme Vocabulary</dct:title>
+    </skos:ConceptScheme>
+  </dcat:themeTaxonomy>
+  <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-07-16</dct:modified>
+  <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:issued>
+  <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+  <dcat:dataset rdf:resource="https://storiaantica.eu/biblioteca-consistenza-fondi"/>
+  <dcat:dataset rdf:resource="https://storiaantica.eu/biblioteca-modalità-di-accesso-"/>
+  <dcat:dataset rdf:resource="https://storiaantica.eu/archivio-consistenza"/>
+  <dcat:dataset rdf:resource="https://storiaantica.eu/archivio-modalità-di-accesso-"/>
+  <dcat:dataset rdf:resource="https://storiaantica.eu/biblioteca-catalogo-e-modalità-di-ricerca"/>
+  <dcat:dataset rdf:resource="https://storiaantica.eu/archivio-documenti-digitalizzati-"/>
+  <dcat:dataset rdf:resource="https://storiaantica.eu/ricerca-erogazione-di-borse"/>
+  <dcat:dataset rdf:resource="https://storiaantica.eu/ricerca-pubblicazioni-"/>
+  <dcat:dataset rdf:resource="https://storiaantica.eu/ricerca-iniziative-scientifica"/>
+  <dcat:dataset rdf:resource="https://storiaantica.eu/ricerca-progetti-pluriennali"/>
+  <dcat:dataset rdf:resource="https://storiaantica.eu/consistenza-archivio-"/>
+  <dcat:dataset rdf:resource="https://storiaantica.eu/convenzioni-accordi"/>
+  <dcat:dataset rdf:resource="https://storiaantica.eu/eventi-scientifici"/>
+  <dcat:dataset rdf:resource="https://storiaantica.eu/finanziamenti-pubblici"/>
+  <dcat:dataset rdf:resource="https://storiaantica.eu/prospetto-borse-di-studio-erogate"/>
+  <dcat:dataset rdf:resource="https://storiaantica.eu/pubblicazioni-libri-"/>
+  </dcatapit:Catalog>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://storiaantica.eu/biblioteca-consistenza-fondi">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Biblioteca consistenza fondi</dct:title>
+    <dcat:landingPage rdf:resource="https://www.storiaantica.eu/fondibiblioteca.it/"/>
+    <dct:description>Elenco aggiornato ciclicamente della consistenza bibliografica</dct:description>
+    <dct:identifier>iipsa:biblioteca-consistenza-fondi</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="iipsa">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/100220">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it">3221 documentazione</skos:prefLabel>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dcat:keyword>Biblioteca</dcat:keyword>
+    <dcat:keyword>numero volumi</dcat:keyword>
+    <dcat:keyword>numero periodici</dcat:keyword>
+    <dcat:distribution rdf:resource="https://storiaantica.eu/biblioteca-consistenza-fondi/csv2"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://storiaantica.eu/biblioteca-modalità-di-accesso-">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Biblioteca modalità di accesso</dct:title>
+    <dcat:landingPage rdf:resource="https://www.storiaantica.eu/modalita-di-accesso-biblioteca.it/"/>
+    <dct:description>modalità di accesso, numero di ore, giorni di accesso</dct:description>
+    <dct:identifier>iipsa:biblioteca-modalità-di-accesso-</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="iipsa">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/100221">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it">3226 comunicazione</skos:prefLabel>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dcat:keyword>Biblioteca</dcat:keyword>
+    <dcat:keyword>utenza</dcat:keyword>
+    <dcat:keyword>orari e numero ore di apertura</dcat:keyword>
+    <dcat:distribution rdf:resource="https://storiaantica.eu/biblioteca-modalità-di-accesso-/csv3"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://storiaantica.eu/archivio-consistenza">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Archivio Consistenza</dct:title>
+    <dcat:landingPage rdf:resource="https://www.storiaantica.eu/fondi-archivio.it/"/>
+    <dct:description>Consistenza fondi e organizzazione</dct:description>
+    <dct:identifier>iipsa:archivio-consistenza</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="iipsa">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/100220">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it">3221 documentazione</skos:prefLabel>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dcat:keyword>Archivio</dcat:keyword>
+    <dcat:keyword>numero fondi</dcat:keyword>
+    <dcat:keyword>organizzazione</dcat:keyword>
+    <dcat:distribution rdf:resource="https://storiaantica.eu/archivio-consistenza/csv4"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://storiaantica.eu/archivio-modalità-di-accesso-">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Archivio modalità di accesso</dct:title>
+    <dcat:landingPage rdf:resource="https://www.storiaantica.eu/modalita-di-accesso-archivio.it/"/>
+    <dct:description>modalità di accesso fondi</dct:description>
+    <dct:identifier>iipsa:archivio-modalità-di-accesso-</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="iipsa">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/100221">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it">3226 comunicazione</skos:prefLabel>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dcat:keyword>Archivio</dcat:keyword>
+    <dcat:keyword>utenza</dcat:keyword>
+    <dcat:keyword>numero ore apertura</dcat:keyword>
+    <dcat:distribution rdf:resource="https://storiaantica.eu/archivio-modalità-di-accesso-/csv5"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://storiaantica.eu/biblioteca-catalogo-e-modalità-di-ricerca">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Biblioteca Catalogo e modalità di ricerca</dct:title>
+    <dcat:landingPage rdf:resource="https://www.storiaantica.eu/ricerca-biblioteca.it/"/>
+    <dct:description>Srumenti di ricerca e catalogazione</dct:description>
+    <dct:identifier>iipsa:biblioteca-catalogo-e-modalità-di-ricerca</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="iipsa">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/100220">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it">3221 documentazione</skos:prefLabel>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dcat:keyword>Biblioteca</dcat:keyword>
+    <dcat:keyword>Catalogo</dcat:keyword>
+    <dcat:keyword>modalità di ricerca</dcat:keyword>
+    <dcat:distribution rdf:resource="https://storiaantica.eu/biblioteca-catalogo-e-modalità-di-ricerca/csv6"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://storiaantica.eu/archivio-documenti-digitalizzati-">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Archivio documenti digitalizzati</dct:title>
+    <dcat:landingPage rdf:resource="https://www.storiaantica.eu/ricerca.archivio.it/"/>
+    <dct:description>modalità di di ricerca fondi digitalizzati progetto aquarius</dct:description>
+    <dct:identifier>iipsa:archivio-documenti-digitalizzati-</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="iipsa">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/100220">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it">3221 documentazione</skos:prefLabel>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dcat:keyword>Archivio</dcat:keyword>
+    <dcat:keyword>documenti digitali</dcat:keyword>
+    <dcat:keyword>progetto aquarius</dcat:keyword>
+    <dcat:distribution rdf:resource="https://storiaantica.eu/archivio-documenti-digitalizzati-/csv7"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://storiaantica.eu/ricerca-erogazione-di-borse">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Ricerca erogazione di borse</dct:title>
+    <dcat:landingPage rdf:resource="https://www.storiaantica.eu/bandi-premi.it/"/>
+    <dct:description>elenco consistenza e procedura bandi</dct:description>
+    <dct:identifier>iipsa:ricerca-erogazione-di-borse</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="iipsa">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/100217">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it">3206 istruzione</skos:prefLabel>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dcat:keyword>Ricerca</dcat:keyword>
+    <dcat:keyword>Bandi borse e premi</dcat:keyword>
+    <dcat:keyword>erogazioni contributi</dcat:keyword>
+    <dcat:distribution rdf:resource="https://storiaantica.eu/ricerca-erogazione-di-borse/csv8"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://storiaantica.eu/ricerca-pubblicazioni-">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Ricerca pubblicazioni</dct:title>
+    <dcat:landingPage rdf:resource="https://www.storiaantica.eu/pubblicazioni.it/"/>
+    <dct:description>elenco dei volumi</dct:description>
+    <dct:identifier>iipsa:ricerca-pubblicazioni-</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="iipsa">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/100213">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it">2831 cultura e religione</skos:prefLabel>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dcat:keyword>Ricerca</dcat:keyword>
+    <dcat:keyword>Pubblicazioni</dcat:keyword>
+    <dcat:keyword>volumi</dcat:keyword>
+    <dcat:distribution rdf:resource="https://storiaantica.eu/ricerca-pubblicazioni-/csv9"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://storiaantica.eu/ricerca-iniziative-scientifica">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Ricerca iniziative Scientifica</dct:title>
+    <dcat:landingPage rdf:resource="https://www.storiaantica.eu/iniziative-pubbliche.it/"/>
+    <dct:description>elenco delle attività scientifiche</dct:description>
+    <dct:identifier>iipsa:ricerca-iniziative-scientifica</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="iipsa">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/100213">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it">2831 cultura e religione</skos:prefLabel>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dcat:keyword>Ricerca</dcat:keyword>
+    <dcat:keyword>Covegni</dcat:keyword>
+    <dcat:keyword>seminari</dcat:keyword>
+    <dcat:distribution rdf:resource="https://storiaantica.eu/ricerca-iniziative-scientifica/csv10"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://storiaantica.eu/ricerca-progetti-pluriennali">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Ricerca Progetti pluriennali</dct:title>
+    <dcat:landingPage rdf:resource="https://www.storiaantica.eu/ricerche.it/"/>
+    <dct:description>elenco delle ricerche scientifiche</dct:description>
+    <dct:identifier>iipsa:ricerca-progetti-pluriennali</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="iipsa">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/100213">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it">2831 cultura e religione</skos:prefLabel>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-29</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dcat:keyword>Ricerca</dcat:keyword>
+    <dcat:keyword>Pubblicazioni</dcat:keyword>
+    <dcat:keyword>edizioni di fonti storiche</dcat:keyword>
+    <dcat:distribution rdf:resource="https://storiaantica.eu/ricerca-progetti-pluriennali/csv11"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://storiaantica.eu/consistenza-archivio-">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Consistenza Archivio</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/StoriaAntica/StoriaAntica2025:def/"/>
+    <dct:description>modalità di accesso</dct:description>
+    <dct:identifier>iipsa:consistenza-archivio-</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="iipsa">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/100220">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it">3221 documentazione</skos:prefLabel>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dcat:keyword>Archivio</dcat:keyword>
+    <dcat:keyword>numero fondi</dcat:keyword>
+    <dcat:keyword>organizzazione</dcat:keyword>
+    <dcat:distribution rdf:resource="https://storiaantica.eu/consistenza-archivio-/csv12"/>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://storiaantica.eu/convenzioni-accordi">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Convenzioni accordi</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/StoriaAntica/StoriaAntica2025:def/"/>
+    <dct:description>Convenzioni</dct:description>
+    <dct:identifier>iipsa:convenzioni-accordi</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="iipsa">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it"/>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dcat:keyword>Convenzioni</dcat:keyword>
+    <dcat:keyword>numero convenzioni</dcat:keyword>
+    <dcat:keyword>Convenzioni</dcat:keyword>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://storiaantica.eu/eventi-scientifici">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Eventi Scientifici</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/StoriaAntica/StoriaAntica2025:def/"/>
+    <dct:description>numero eventi scientifici</dct:description>
+    <dct:identifier>iipsa:eventi-scientifici</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="iipsa">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it"/>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dcat:keyword>Eventi</dcat:keyword>
+    <dcat:keyword>numero eventi</dcat:keyword>
+    <dcat:keyword>eventi</dcat:keyword>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://storiaantica.eu/finanziamenti-pubblici">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Finanziamenti Pubblici</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/StoriaAntica/StoriaAntica2025:def/"/>
+    <dct:description>numero finanziamenti</dct:description>
+    <dct:identifier>iipsa:finanziamenti-pubblici</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="iipsa">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it"/>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dcat:keyword>Finanziamenti</dcat:keyword>
+    <dcat:keyword>numero Finanziamenti</dcat:keyword>
+    <dcat:keyword>Finanziamenti</dcat:keyword>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://storiaantica.eu/prospetto-borse-di-studio-erogate">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Prospetto Borse di Studio erogate</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/StoriaAntica/StoriaAntica2025:def/"/>
+    <dct:description>numero borse di studio erogate</dct:description>
+    <dct:identifier>iipsa:prospetto-borse-di-studio-erogate</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="iipsa">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it"/>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dcat:keyword>Borse di Studio</dcat:keyword>
+    <dcat:keyword>numero Borse di Studio erogate</dcat:keyword>
+    <dcat:keyword>Borse di Studio</dcat:keyword>
+  </dcatapit:Dataset>
+  <skos:Concept rdf:about="http://publications.europa.eu/resource/authority/data-theme/EDUC">
+    <skos:prefLabel>Istruzione, cultura e sport</skos:prefLabel>
+  </skos:Concept>
+  <dcatapit:Dataset rdf:about="https://storiaantica.eu/pubblicazioni-libri-">
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <dct:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/EDUC"/>
+    <dct:license/>
+    <dct:title>Pubblicazioni Libri</dct:title>
+    <dcat:landingPage rdf:resource="https://github.com/StoriaAntica/StoriaAntica2025:def/"/>
+    <dct:description>numero Pubblicazioni</dct:description>
+    <dct:identifier>iipsa:pubblicazioni-libri-</dct:identifier>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dct:rightsHolder>
+      <dcatapit:Agent rdf:about="iipsa">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:rightsHolder>
+    <dct:publisher>
+      <dcatapit:Agent rdf:nodeID="Nd117aa7f2e7b47fb9481d4a8aca59c7d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>iipsa</dct:identifier>
+        <foaf:name>Istituto Italiano per la Storia Antica</foaf:name>
+      </dcatapit:Agent>
+    </dct:publisher>
+    <dct:subject>
+      <skos:Concept rdf:about="http://eurovoc.europa.eu/">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#subTheme"/>
+        <skos:prefLabel xml:lang="it"/>
+      </skos:Concept>
+    </dct:subject>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</dct:modified>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-12-22</dct:issued>
+    <dcat:contactPoint rdf:resource="https://www.storiaantica.eu/Contatti"/>
+    <dcat:keyword>Pubblicazioni</dcat:keyword>
+    <dcat:keyword>numero Pubblicazioni</dcat:keyword>
+    <dcat:keyword>Pubblicazioni</dcat:keyword>
+  </dcatapit:Dataset>
+  <dcatapit:Distribution rdf:about="https://storiaantica.eu/biblioteca-consistenza-fondi/csv2">
+    <dcat:accessURL rdf:resource="https://www.StoriaAntica.eu/fondi-biblioteca/"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://storiaantica.eu/biblioteca-modalità-di-accesso-/csv3">
+    <dcat:accessURL rdf:resource="https://www.StoriaAntica.eu/modalita-di-accesso-biblioteca/"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://storiaantica.eu/archivio-consistenza/csv4">
+    <dcat:accessURL rdf:resource="https://www.StoriaAntica.eu/fondi-archivio/"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://storiaantica.eu/archivio-modalità-di-accesso-/csv5">
+    <dcat:accessURL rdf:resource="https://www.StoriaAntica.eu/modalita-di-accesso-archivio/"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://storiaantica.eu/biblioteca-catalogo-e-modalità-di-ricerca/csv6">
+    <dcat:accessURL rdf:resource="https://www.StoriaAntica.eu/ricerca-biblioteca/"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://storiaantica.eu/archivio-documenti-digitalizzati-/csv7">
+    <dcat:accessURL rdf:resource="https://www.StoriaAntica.eu/ricerca-archivio/"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://storiaantica.eu/ricerca-erogazione-di-borse/csv8">
+    <dcat:accessURL rdf:resource="https://www.StoriaAntica.eu/bandi-e-premi/"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://storiaantica.eu/ricerca-pubblicazioni-/csv9">
+    <dcat:accessURL rdf:resource="https://www.StoriaAntica.eu/pubblicazioni/"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://storiaantica.eu/ricerca-iniziative-scientifica/csv10">
+    <dcat:accessURL rdf:resource="https://www.StoriaAntica.eu/iniziative-pubbliche/"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="https://creativecommons.org/licenses/by/4.0/">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://storiaantica.eu/ricerca-progetti-pluriennali/csv11">
+    <dcat:accessURL rdf:resource="https://www.StoriaAntica.eu/ricerca/"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+  <dcatapit:Distribution rdf:about="https://storiaantica.eu/consistenza-archivio-/csv12">
+    <dcat:accessURL rdf:resource="https://github.com/StoriaAntica/StoriaAntica2025%5Fdef"/>
+    <dct:license>
+      <dcatapit:LicenseDocument rdf:about="">
+        <rdf:type rdf:resource="dct:LicenseDocument"/>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:name>Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)</foaf:name>
+      </dcatapit:LicenseDocument>
+    </dct:license>
+    <dct:format rdf:resource="CSV"/>
+    <dct:rights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
+    <dct:description>File in formato CSV per l'interoperabilità</dct:description>
+    <dct:title>CSV</dct:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+  </dcatapit:Distribution>
+<dcatapit:Organization rdf:about="https://www.storiaantica.eu/Contatti">
+  <rdf:type rdf:resource="vcard:Organization"/>
+  <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+  <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+  <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+  <rdf:type rdf:resource="vcard:Kind"/>
+  <vcard:fn>Istituto Italiano per la Storia Antica</vcard:fn>
+  <vcard:hasEmail rdf:resource="segreteria@storiaantica.eu"/>
+  <vcard:hasTelephone>64880597</vcard:hasTelephone>
+  <vcard:hasURL rdf:resource="https://www.storiaantica.eu/Contatti"/>
+</dcatapit:Organization>
+</rdf:RDF>
